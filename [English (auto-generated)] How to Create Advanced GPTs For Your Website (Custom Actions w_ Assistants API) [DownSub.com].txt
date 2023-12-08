@@ -1,0 +1,2092 @@
+in this video I'll be showing you step
+
+by step how to create an insanely
+
+powerful lead generation custom GPT with
+
+multiple custom actions and add it to
+
+any website if you're watching this
+
+you've probably already created some
+
+awesome gpts within the chat GPT Builder
+
+but you want to break them out of the
+
+chat GPT site and start using them in
+
+the real world or you want to learn more
+
+about how to add powerful custom actions
+
+to your gpts to make them more useful
+
+for your use case unfortunately a lot of
+
+people still don't understand what the
+
+new assistance API is and even I was
+
+confused by it at first but knowing what
+
+it is and how to build your own custom
+
+gpts with it puts you in the top 1% of
+
+people who are chasing down this
+
+opportunity so by the end of this video
+
+you'll not only know how to build your
+
+own custom gpts using the assistant API
+
+and put them on your websites but you'll
+
+also know how to plan create and
+
+Implement insanely powerful custom
+
+actions into your gpts to create real
+
+value for your businesses or for your
+
+clients and at the end end of the video
+
+I'll be giving away everything that I'm
+
+building today as a template so that you
+
+can steal this insanely powerful lead
+
+generation chatbot and start using it in
+
+your own business or selling it yourself
+
+if you're new to the channel and don't
+
+know who I am my name is Liam otley and
+
+I run my own sixf figure development
+
+company called morning side Ai and I
+
+also run the largest community of AI
+
+agency owners in the world where my
+
+students learn how to make money by
+
+selling AI solutions to businesses just
+
+like the lead generation chat bot that
+
+you're about to build let's get into it
+
+to kick things off I'm actually going to
+
+be showing you the finished product here
+
+on screen so that you get an idea of
+
+where we're going with this and how much
+
+value we are creating when we do this
+
+right so on screen is a template website
+
+that I've downloaded just refreshing the
+
+page so you can see that it's live if I
+
+click on the widget in the right here up
+
+Pops the chat window and I can start
+
+talking to it hi I'm Lucy Smith's solar
+
+assistant I can help you with any
+
+questions on solar for your home I can
+
+also calculate the potential solar
+
+savings for your property how can I help
+
+you today that gives you an idea of the
+
+two functionalities of this chat bot so
+
+firstly we can ask questions to the
+
+knowledge base what is the
+
+cheapest type of panel this will be
+
+querying our knowledge based document
+
+which you guys will get to see in a
+
+second it's a general faq's and
+
+information brochure for anything
+
+related to solar for single family homes
+
+here we have the answer the cheapest
+
+type of solar panel is poly crystalline
+
+solar panel great so that shows the
+
+knowledge Bas is working but more
+
+importantly here's the feature help me
+
+calulate my soul solar
+
+savings help me calculate my solar
+
+saving plit the assistant is going to
+
+pick up on this and going to realize
+
+that we need two inputs which is going
+
+to be their home address and their
+
+monthly electricity bill in USD so for
+
+this I'm picking someone's lucky address
+
+um in the United States so let's grab
+
+this one here click on this sorry to
+
+whoever's homeless is broadcasting your
+
+address out copy this head back and if I
+
+just put in just the address here it
+
+should ask me for the monthly bill as
+
+well cuz it needs the two inputs to
+
+calculate this great thanks for sharing
+
+your address to proceed I'll also need
+
+your average monthly electricity bill so
+
+let's say I'm spend $250 $ per month now
+
+it's going to take that address it's
+
+going to take that monthly cost of power
+
+and it's going to call the Google solar
+
+API bring it back and tell us exactly
+
+what kind of savings we can expect for
+
+our property if we choose to convert to
+
+solar there we have it it's given us a
+
+full breakdown of our options for solar
+
+based off allocation I'll break this
+
+down a little bit more later it's really
+
+really complex stuff that's going on
+
+behind the scenes here but essentially
+
+it's giving us information like our
+
+payback period and the 20e savings we're
+
+going to experience any federal
+
+incentives that are associated with our
+
+location but that's not even all this
+
+thing at the end it asks for a lead
+
+capture so it's asking me for my phone
+
+number and my name and then if I provide
+
+that I go Le artly and I give it a phone
+
+number phone
+
+number and I give that to them then what
+
+this is going to do is take that
+
+information and it's going to a take my
+
+address and it's going to push that all
+
+to a CRM which I'm going to show you how
+
+to set up later and then we have it
+
+thank you your details have been passed
+
+to our team someone will be in touch
+
+with you soon so that's the breakdown
+
+and a demo of the bot but before we get
+
+into the building I need to do a little
+
+bit of explanation so that you're fully
+
+clear on the difference between creating
+
+gpts as you are on chat GPT and creating
+
+your own cool ones within the chat GPT
+
+website and the kind of thing that we're
+
+building over here which is using the
+
+assistant API these are your two
+
+different ways of creating gpts now on
+
+the chat GPT Builder they are locked
+
+inside of that of the interface you
+
+can't take what you create on the chat
+
+GPT site when you build these things and
+
+then go and slap that on your website or
+
+put that on WhatsApp or put it wherever
+
+you want you are locked into that and
+
+it's intended for you to just use it in
+
+there as a handy little kind of personal
+
+tool I've said that gpts in this way are
+
+like consumer toys they're focused for
+
+the mass market and and consumers to
+
+engage and have fun with and build these
+
+gpts but the other side of this is using
+
+the assistance API I've been over this
+
+recently in my other videos but it's
+
+important that you understand the
+
+difference and that most of the value is
+
+going to be unlocked through this
+
+assistance API because this allows
+
+businesses and anyone really to take
+
+that same GPT functionality that you
+
+create there which is really cool but
+
+then take that and put it wherever you
+
+want integrate it into any application
+
+any website any voice assistant whatever
+
+you want so what I'm teaching you in
+
+this video is how to use that side of
+
+thing is the assistance API Which is far
+
+more powerful and is going to create far
+
+more value in our world and really be a
+
+much more valuable skill than being able
+
+to make uh little fun gbts on the chat
+
+gbt website then we need to get into a
+
+little bit of a deeper breakdown of what
+
+we're building and how we're going to
+
+build it so if you haven't figured out
+
+already we're making a lead generation
+
+chat bot for solar companies that's
+
+going to be put on their website which
+
+is intended to help leads and people who
+
+are interacting with the website to get
+
+to their questions firstly if they have
+
+any questions related to hey what solar
+
+panel is the best what financing options
+
+what's this what's that anything that
+
+they could want to ask as if they were
+
+talking to a solar expert we're going to
+
+allow them to ask that to the chat bot
+
+which can respond from a knowledge base
+
+using a document that we're provided
+
+containing this kind of information
+
+secondly this chat will also allow them
+
+to calculate their potential solar
+
+savings if they were to install a system
+
+and we're going to do that by taking in
+
+their address and their monthly powerb
+
+and sending that off to Google solar API
+
+and getting the response back from that
+
+and then finally once I've got that back
+
+from the calculator tool we're going to
+
+ask them for their lead information so
+
+we can capture the lead and follow them
+
+up we can break it down into my three
+
+ingredients concept for creating gbts
+
+which is prompting knowledge and actions
+
+the prompting is going to tell it that
+
+it is an assistant for Smith solar that
+
+it can answer questions from a knowledge
+
+base regarding solar questions and it
+
+can also provide calculations and it can
+
+also capture the lead at the end of it
+
+so that's all the information that we're
+
+stuffing into the problem for the
+
+knowledge component we are uploading a
+
+single document containing a ton of
+
+information on solar for single family
+
+homes and finally the actions are going
+
+to be calculate solar savings using the
+
+solar API and then capture the lead and
+
+send it to air table the stack of
+
+technology that we're using to create
+
+this assistant is firstly the assistant
+
+API of course the solar API and
+
+geocoding API from Google repet to host
+
+it and voice flow to be the front end
+
+for it okay to get started you need to
+
+Fork my refet template which is going to
+
+be available in the first link in the
+
+description you can sign up to my
+
+resource Hub it's 100% free and there'll
+
+be a link in the resource hub for this
+
+particular video where you can get
+
+access to this rip now when you click on
+
+the link it's going to take you to the
+
+screen and what you're going to want to
+
+do is click on the fork button on the
+
+right here and we're going to give it a
+
+name solar lead gen
+
+chatbot and we can Fork
+
+it if you give it a second it will boot
+
+up in here then you'll be greeted with
+
+this here for those of you who aren't
+
+developers or don't know how to code
+
+this might seem a little bit
+
+overwhelming but don't worry i' set this
+
+up in a way where you don't need to do
+
+any any major changes to get the kind of
+
+results you're looking for and any ones
+
+that you do I'll Point them out very
+
+clearly and it's just a couple
+
+characters or words that you need to
+
+change so we have our main.py file here
+
+which has our endpoints the chat inpoint
+
+and the start inpoint don't worry too
+
+much about this we have the functions.
+
+pi file which has all the specific
+
+functionality such as creating a lead on
+
+a table such as pulling the data from
+
+the solar API Etc so all of the the fun
+
+stuff happens in here then at the bottom
+
+we have our create assistant function I
+
+have gone pretty heavy on the comments
+
+throughout this file so when it comes to
+
+modifying it and changing the knowledge
+
+or the functions there should be plenty
+
+of comments to help you figure out what
+
+you need to do but I'll take you through
+
+a crash course now because I know many
+
+of you will want to take this change the
+
+knowledge change the function so this is
+
+how you can do it so for changing the
+
+knowledge which is the easiest one to do
+
+we have the knowledge. docx which is
+
+referencing the document on the left
+
+here so if you want to change the
+
+document you can delete that and you can
+
+upload a new one by clicking this so you
+
+can upload a new file and just make sure
+
+that the name of the file is referenced
+
+here exactly if you want to add multiple
+
+files you'll need to copy and paste this
+
+multiple times and save them to
+
+different files I recommend that you
+
+paste this entire function from the top
+
+down and to check gbt and say hey I'd
+
+like to add multiple files cuz it needs
+
+to add a couple different rows here
+
+duplicate that and then down the bottom
+
+here we need to pass in more than one
+
+file ID so that's for changing the
+
+knowledge for changing the instructions
+
+we have this instructions assistant
+
+instructions variable reference here and
+
+what this is actually doing is pulling
+
+from up here we have an import from our
+
+prompts file and on the left here is the
+
+prompts file that we're talking about so
+
+the assistant instructions and the
+
+prompts STP if you want to change the
+
+instructions for your assistant this is
+
+where you need to do it so by changing
+
+this you can take a look at how I've set
+
+this thing up here but by changing this
+
+you're going to change the prompting and
+
+the behavior of the chatot and the
+
+information in here as you look at my
+
+stuff you'll see that it's referencing
+
+how to use the knowledge it's
+
+referencing how to use the tools and
+
+what to do after so one of the cool
+
+things that I added in here was that
+
+after the assistant has provided the
+
+user with their solar calculations they
+
+should ask for their name and phone
+
+number so that one of the team can get a
+
+contact with them about installing solar
+
+for their home so that is instructing it
+
+to after you've triggered that tool then
+
+do this which is what you'll see later
+
+in the app where it actually asks for
+
+the lead capture at the end of the
+
+response from the tool so if you want to
+
+change the prompting and the
+
+instructions you need to come to the
+
+prompt stop High file modify that if you
+
+want to change the knowledge you need to
+
+come to the top of the create assistance
+
+function and modify this and modify your
+
+documents when it comes to modifying the
+
+functions it's definitely the harder
+
+part but I'll try to walk you through it
+
+as quickly as possible now and make it
+
+as simple as possible so from a high
+
+level we have in the setup for our
+
+system we have our different functions
+
+so again this bit here is knowledge tool
+
+so wec retrieval means that it's adding
+
+the knowledge base retrieval tool which
+
+is going to handle the knowledge base up
+
+here but the one below it is a function
+
+so we have our solar panel calculations
+
+and then we have the properties and the
+
+inputs it provides so we need the
+
+address and we need the monthly bill and
+
+both of them are required and the same
+
+down here we have another function
+
+called create lead which is going to log
+
+the lead in the database it has a little
+
+description and then it's going to need
+
+the name the phone the address and all
+
+of them are required now you don't need
+
+to write these all yourself that you can
+
+ask chbt to assist you with this and by
+
+pasting in this entire function it's
+
+going to show them exactly how you need
+
+to do it so this is your reference and
+
+chat gbd can help you to modify it now
+
+when it comes to actually what functions
+
+are being used the name of the function
+
+here needs to match the name of the
+
+function that you want to call in this
+
+case I want to call this which is my
+
+sort of full calculations function again
+
+if I go down to here the name of the
+
+function is called create uncore lead
+
+and at the top I have create uncore lead
+
+now this all comes together when you go
+
+to the main.py file so over here if I
+
+scroll down to the chat endpoint and I
+
+scroll down to this section you'll see
+
+in this part here if the assistant picks
+
+up action required meaning one of the
+
+tools has been triggered based off the
+
+natural language description of capture
+
+the lead details calculate the solar
+
+potential if one of those are triggered
+
+it's going to come down here and look up
+
+for the different function names so we
+
+have the solar panel calculations and
+
+the create lead when the assistant
+
+initiates the action it's going to pass
+
+the name through and we can go okay
+
+what's the tool call that it's called
+
+what's the name of that okay it matches
+
+the solar panel one great then we want
+
+to call from our fun functions file the
+
+solar panel calculations and that takes
+
+the address argument and it takes a
+
+monthly bill argument you can see this
+
+back
+
+here it takes an address and a monthly
+
+bill and in this case we are just
+
+pulling from the tool call we are
+
+pulling the address as the first
+
+parameter and the monthly bill as the
+
+second parameter so might seem a bit
+
+complicated but again if you paste this
+
+into chat gbt it should understand what
+
+you're trying to do same thing happens
+
+down here with the create lead again we
+
+needed to have three parameters in here
+
+which is the name phone and address and
+
+if the function name that was matched
+
+within the tool matches the create lead
+
+name here then it's going to trigger
+
+that and pass the arguments in and then
+
+output it so that might be a little bit
+
+complex for some of you but I did
+
+promise that you would understand how to
+
+put these things together and how it all
+
+fits you might need to go back and break
+
+that down a couple of times but that is
+
+how it works the next step for you to
+
+set this up is to head over to Google
+
+Cloud so cloud.google.com and you need
+
+to come on here and create account I
+
+assume you've already got a Gmail
+
+account then you can click on go to
+
+console you might need to do a bit of
+
+setup and sort of creating an account on
+
+the Google Cloud platform once you're in
+
+you should see this and then what we
+
+need to do is come up to the top left
+
+let's create a new project I'll call
+
+this Sol chatbot for this I'll be using
+
+my YouTube projects billing account in
+
+your case you'll need to set one up um
+
+just so you're clear on the of cost I've
+
+been using this a decent amount and I've
+
+been charged under a dollar so these
+
+things are very cheap to use for the API
+
+usage so create your building account
+
+you need to put a card on it so that
+
+they're able to verify it and allow to
+
+start using it but once you've set up
+
+your billing account and put a card on
+
+file you'll be able to select it here
+
+and then for the organization I'll just
+
+leave it as none so it's going to take a
+
+second for it to create my project then
+
+I can click select project here so that
+
+I jump into it then once it's all set up
+
+what you can do is click on the apis and
+
+services section here and go to library
+
+and then what you want to do is search
+
+up geoc
+
+coding geoc coding click on the geoc
+
+coding
+
+API need to enable that
+
+when you successfully enable that it
+
+should pop up with this API key message
+
+so you can copy your API key here which
+
+is what we're going to need to use and
+
+our application to be able to call the
+
+solar API so we can copy this save it
+
+somewhere and go continue to Google Maps
+
+um maybe later for the protecting my API
+
+key then we'll go back to apis and
+
+services let's close this on the side
+
+then you'll see the solar API appear
+
+here so we can click enable on the solar
+
+API give that a
+
+second
+
+and we can scroll down to make sure we
+
+have the GE coding API enabled great we
+
+have our Google Cloud set up we have our
+
+API key and we have the solar API and
+
+the geocoding API enabled you want to
+
+grab that API key and come back over to
+
+our ret and if I scroll to the secret
+
+section and click on Secrets should see
+
+the Google Cloud API key section here
+
+what you want to do is click the edit
+
+button here and then paste in your API
+
+key here and click update secret next we
+
+need to set up our air table to log all
+
+of the leads which will act as our
+
+temporary CRM you can use obviously any
+
+kind of CRM that you like I just like
+
+using air table because I'm very
+
+familiar with the API so in this example
+
+we'll be using air table I do have a
+
+base here that you'll be able to copy if
+
+you want to get access to this CRM you
+
+can copy and clone it over to your
+
+account it'll be in the resource H as
+
+well so there'll be a link to click on
+
+that then you should see a page like
+
+this and you will see this button here
+
+that says copy base so if you copy that
+
+it's your air table account you'll have
+
+the sour it up as I've got it done here
+
+then we need to do one more thing which
+
+is to go onto our developer Hub on the
+
+right here
+
+and you will see all of our personal
+
+access tokens so you'll need to click on
+
+create token up here on the right give
+
+it a name uh we'll call it lead gen
+
+chatbot not the best name and we can go
+
+to uh Scopes and we need to add data
+
+records read data records write and then
+
+we need to set up the access so in this
+
+case I'm going to go down to Smith Sol
+
+CRM and add that and then I can create
+
+the token it'll then pop up with your
+
+API key which you need to copy and then
+
+bring back over to replit again and do
+
+the same process so click here edit and
+
+then paste it in and save the updated
+
+API key the final step for setting up
+
+these Keys is to get your open AI API
+
+key to create or copy your API key for
+
+openai you can come to platform.
+
+open.com ai- keys and on the page here
+
+you will see a button to create a new
+
+secret key you can click this button it
+
+will give you a new key you can copy
+
+that back over to here and do the same
+
+process of updating the API key now I've
+
+all mentioned I had a bunch of people
+
+asking in the comments that they
+
+couldn't get access to the model that we
+
+are using in this particular build
+
+that's because you likely need to put
+
+your card on file what you need to do is
+
+go to the settings on the side here you
+
+need to add a card for building you're
+
+not necessarily going to be build for it
+
+because you do have that free allowance
+
+but you need to put a card on file so
+
+that they allow you to use these models
+
+just a little issue I saw in the
+
+comments of the last video the very last
+
+bit of setup we need to do here is to
+
+get our air table based URL so what you
+
+can do is click on the uh profile icon
+
+in the corner click on developer Hub and
+
+then we can click on web API
+
+documentation and then you can scroll
+
+down and click on your Smith solar CRM
+
+and that will take you to the
+
+documentation for your particular base
+
+which is super handy if you scroll down
+
+to the leads table in this case we want
+
+to go
+
+to create leads record and it will give
+
+you a URL here so we want to copy this
+
+all the way up to the end of the leads
+
+word and we've already set this up when
+
+I wrote the code this is already kind of
+
+integrated into the function all you
+
+need to do is head back and come to this
+
+create lead function and replace that
+
+entire bit there I already have mine in
+
+there so it didn't change anything but
+
+you should replace this URL with your
+
+url with all of that done we are pretty
+
+much ready to boot this thing up let's
+
+just save this file make sure we've all
+
+saved up let's go back and give the
+
+main. power file a save as well and we
+
+can click this big juicy Green Run
+
+button on the top give it a second and
+
+it's going to boot up on the left panel
+
+here you'll see that there is no
+
+assistants. Json and you'll see a file
+
+pop up here in a second so give it a sec
+
+and then we have the assistant. Json
+
+file pop up the way that I've set this
+
+up is that the create assistance
+
+function will run at the start of every
+
+time you run the application but what
+
+it's going to do is check in the left
+
+hand panel for this assistants. Json
+
+file if there is none there it will try
+
+to create a new assistant every
+
+assistant that you create on the open AI
+
+servers costs you an API usage so you
+
+don't want to have creating a new
+
+assistant every time you run the app so
+
+what this does is if there is no
+
+assistant file available it's going to
+
+go through the creation process and look
+
+at okay what model am I using okay what
+
+am I tools am I using okay I have this
+
+knowledge based I have these two
+
+functions Etc and it will sort of
+
+combine all those ingredients and then
+
+push that up into the servers create the
+
+assistant and then what it sends back is
+
+the assistant ID and that assistant ID
+
+is saved to this Json file and at the
+
+end of this function it is sent back to
+
+the main function if there's already
+
+assistant created it's just going to
+
+load it from the file which is great
+
+we're not using unnecessary amounts of
+
+API usage but if there isn't it's going
+
+to create a new one and save that for
+
+the next time what this means for you is
+
+that if you want to recreate your
+
+assistant and you want to change the
+
+configuration say you want to change the
+
+knowledge bace or you want to change how
+
+the functions operate what you need to
+
+do is delete this assistant. Json file
+
+and then run the app again and it's
+
+going to create it with the new settings
+
+so just so you understand how I'm
+
+managing the assistant ID and creation
+
+of assistant in this application if you
+
+did everything right you should have
+
+this down in the bottom left corner
+
+where it says it's running now and this
+
+window would have popped up in the web
+
+view but it says not found it's not an
+
+error don't worry this is how it's
+
+supposed to be but what you want to do
+
+is click on this new tab button click
+
+there and it's going to pop up with this
+
+URL here so this is where our web
+
+servers being hosted this is how we can
+
+interact with the application we've just
+
+built but we're not going to do it
+
+through a browser we're going to do it
+
+programmatically within voice flow which
+
+brings us to our next step in this build
+
+which is to sign up to voice flow if you
+
+haven't already there's going to be a
+
+link in the description if you want to
+
+sign up there this is my favorite bot
+
+building platform and this is what I
+
+build a lot of the stuff I build at my
+
+development company if we going to go
+
+sort of the lower code route this is the
+
+best platform that we have found for
+
+creating these kind of builds I really
+
+love using this platform and highly
+
+recommend it if you're going to be doing
+
+anything like this once you've logged in
+
+you should see a screen like this now
+
+what you're going to need to do is go to
+
+my resource Hub and download the
+
+voiceflow template so I've already
+
+created a template for you um that does
+
+everything you need to do out of the box
+
+as you're going to see in a second but
+
+in order to get that you need to sign up
+
+to my resource Hub it's free and you can
+
+download that file then once you've
+
+downloaded the file you need to come
+
+back to voice flow and click on this
+
+import. VF file and then your downloads
+
+you should be able to select your voice
+
+playay file in this case there's one
+
+down here when you click that and click
+
+open it's going to pop up in the corner
+
+and ask if you want to open the
+
+assistant which you reply yes to and
+
+then you will see a screen that looks a
+
+little bit like this so this is as
+
+simple as it is for us to be able to
+
+deploy all of our functionality that
+
+we've created and all of the assistant
+
+API magic to a website and to a website
+
+widget chat FL so just to walk you
+
+through the voice flow build quickly we
+
+have firstly here our create thread so
+
+this is going to be where we paste in
+
+our URL if you come back to this page
+
+here come and copy this and then to
+
+replace this you just need to go up to
+
+the start you should have slash start at
+
+the end of your url make sure it's
+
+exactly like that it's your url SL start
+
+that's all you need and then you can
+
+come to this one as well generate
+
+response and do the same thing replace
+
+this URL with your
+
+one and then we have everything set up
+
+walk you through things again this is
+
+where we create a thread by calling this
+
+URL we're going back to our repet here
+
+which has this function in our main.py
+
+which is the/ start start so this is
+
+going to create a new conversation this
+
+is going to create a new thread in our
+
+assistant and then we're going to be
+
+able to say hey I'm Lucy Smith solo
+
+assistant I can help you with any
+
+questions about solar for your home I
+
+can also calculate your potential solar
+
+savings how can I help you today then
+
+we're going to wait for the user's input
+
+we're going to capture that then we're
+
+going to send that off to our other
+
+endpoint which is the SL chat and then
+
+we have it here which pulls out the
+
+message from the user passes it to our
+
+assistant and it does all the magic and
+
+here you can try to dig through it it's
+
+it's quite complex and for those of you
+
+who ask me why I use repet for these
+
+kind of builds is because look at all of
+
+this I would much rather have this on a
+
+repet where I have full control over and
+
+I really understand the environment
+
+rather than trying to cram all of this
+
+into voice flow and do that multiple
+
+times in different stages in the app so
+
+I keep it all here because we can sort
+
+of tile ends make it look or pretty and
+
+then just access it through one simple
+
+um API endpoint and call this within
+
+voice flow so that's the chat
+
+functionality what we do is send off the
+
+thread ID that we created earlier so
+
+when we do this we're going to save the
+
+thread ID that we get back from the API
+
+and then we send it off with the last
+
+utterance which is what the user said uh
+
+so we send off the the user's message we
+
+send off the thread ID to our endpoint
+
+and it processes it and sends the AI
+
+response back which we save as the last
+
+response and then we come down here this
+
+is a little snippet that someone from my
+
+comment section gave to me instead of
+
+using a AI task to remove this we can
+
+actually just remove it using regular
+
+Expressions which is great he actually
+
+got it working so this is saving us on
+
+AI tokens which is an important thing
+
+that many of you brought up if you are
+
+using something like voice flow a lot of
+
+questions about yes they $50 but also
+
+the token cost if you go over because we
+
+have removed the AI task from this now
+
+you not going to be using the AI task
+
+down here which will save you a ton on
+
+token costs last but not least we take
+
+that trimmed response that's removed any
+
+of the citations because when you talk
+
+to the knowledge base sometimes it will
+
+send citations they look kind of ugly so
+
+we want to get rid of them then it's
+
+going to send that last response as the
+
+answer then it's going to loop back and
+
+wait for the next user response and it
+
+goes through this Loop kind of up here
+
+down here and back over and over and
+
+over again until the end of the
+
+conversation in order for us to test
+
+this we need to make sure that firstly
+
+we have changed our URLs over as I
+
+mentioned before so it should do USB or
+
+youve repet URL taken from here and with
+
+SL start on this one and then on this
+
+one it should be/ chat everything else
+
+should remain the same go back to your
+
+replate make sure it is running and
+
+everything is all good here this thing
+
+should say stop and there should be a
+
+little cursor here then we can click on
+
+the Run button on the right here and
+
+click run
+
+test how can I help you today um what
+
+are the best solar panels
+
+so I'm going to ask to the knowledge
+
+base and then we have it we're getting
+
+responses from the knowledge base while
+
+we're at it we can test the solar
+
+calculator features so let's go I want
+
+to calculate my savings so let's ask it
+
+and get it to sendback this is why
+
+they're so cool and so powerful these
+
+particular Systems Prior to this
+
+technology coming out and this new
+
+release getting these kind of
+
+interactions that are really natural and
+
+flexible between user and the AI was was
+
+quite difficult to say the least and
+
+look at this I can ask it about one of
+
+the tools to it has then it can come
+
+back to me and say sure these are the
+
+things I need and then if I just give it
+
+partial information it's going to be
+
+smart enough to ask me again for the
+
+rest of the information and then pull
+
+all of the information it needs out of
+
+multiple messages and send it away to
+
+our tools our functions our custom
+
+actions with an KN back in and then give
+
+us the answer so it's really amazing
+
+stuff here we can
+
+go could you please provide your address
+
+and your average monthly electricity
+
+bill so let's go uh get a new place here
+
+in Florida
+
+somewhere let's get this going
+
+maybe this one won't work but let's
+
+going really go bang and then it say I
+
+pay $350 per month now if you are
+
+watching this and you want to debug and
+
+understand what's happening I have set
+
+up print statements here so that you can
+
+see what's going on with the application
+
+uh while it's still doing the buffering
+
+now if we scroll down a bit here you can
+
+see that's the prior response here you
+
+can see it received message so that's us
+
+sending the message to the chatbot
+
+calculating solar potential oh where's
+
+it going calculating Sol potential for
+
+that address with bill amount 350 so
+
+it's taken it's passed through the
+
+message and it's pulled out the address
+
+and the bill amount so it's separate
+
+variables then it's converted that to
+
+coordinates you can see and then it's
+
+retrieved the solid data for that
+
+location successfully then we've
+
+simplified the data that we get back
+
+from the API and then we have the
+
+assistant response here which is really
+
+handy so that's printed out the exact
+
+response that get sent in here so if you
+
+come back you can see that we have the
+
+proper response here so seems like this
+
+guy has a $20,000 Federal incentive
+
+available to cost without solar will be
+
+$100,000 over 20 years the the API gives
+
+us back information about the cash
+
+purchase option Finance purchase option
+
+and leasing option and then gives a bit
+
+of a summary at the end um thanks to our
+
+our prompted assistant knowing what to
+
+do with the information and if you look
+
+carefully at the end here you can see
+
+that it is asking me for my information
+
+my name and phone number so that one of
+
+the team members can get in touch with
+
+you this is the lead capture step so all
+
+I need to do is go uh let's call myself
+
+uh Hugh Jackman
+
+phone number uh
+
+301
+
+9932 so it's going to take that name oh
+
+huge Jackman not huge Jackman oops
+
+forgive it a second yep thank you huge
+
+one of our team members will reach out
+
+to you shortly at the number you
+
+provided now we should see in our air
+
+table huge Jackin boom huge Jackin phone
+
+number and it's also pulled their
+
+address so that we have this information
+
+I did also want to add another column
+
+that was information so it could pull
+
+some of the savings data from the uh the
+
+output that we got from the solar
+
+calculator and use this to sort of fill
+
+out the lead information it could also
+
+take some of the information from the
+
+conversation say they asked a question
+
+about hey what's the best panels what's
+
+the best financing option we could get
+
+the AI to analyze the conversation the
+
+thread and pluck out the kind of
+
+questions or concerns that they might
+
+have so that we have some a little bit
+
+more data if our guys are going to go
+
+out and reach out to these people so
+
+okay we have the have the address we
+
+have the questions that we're asking we
+
+have the phone number we have the name a
+
+ton of good lead data and we also have a
+
+little status column here so say if I
+
+reach out to them we can go interested
+
+not interested Etc and then we have a
+
+working demo of our assistant within
+
+voice flow the last step now is to
+
+export this functionality to a website
+
+via a little embeddable script that we
+
+can add to any website which I'll show
+
+you in a second but if you are enjoying
+
+the video so far I'd really appreciate
+
+if you give me a like on this I put a
+
+ton of work into this to bring the
+
+latest and most exciting things that I
+
+can find that I'm working on right now
+
+and giving them away to you for free in
+
+the form of a tutorial and template as
+
+well so if you are enjoying want to
+
+support the Channel please leave like
+
+right now would mean a lot to myself and
+
+the community all righty now the last
+
+step we need to do is click on this
+
+Integrations tab on the left click here
+
+and you should see these three boxes pop
+
+up on the right here is an example of
+
+how it's going to look on a website so
+
+at the moment I'm happy with the styling
+
+I believe the styling should carry over
+
+when I export this template we have the
+
+installation script which we're going to
+
+grab in a second we have the general so
+
+I've got the name description I've got
+
+the chat persistance set to forget after
+
+tab is closed and reloaded just so that
+
+I can run through it a bunch of times
+
+you probably want to set it to never
+
+forget on the setting here but for the
+
+purposes of testing I'm going to leave
+
+it there then we have the appearance
+
+section so I've modified this a bit with
+
+the color logo Etc I'm pretty happy with
+
+that so we can click copy here and in
+
+this case I've got a demo website as I
+
+did in my recent video I've just pulled
+
+a free template off the internet
+
+somewhere that looks kind of similar to
+
+a Solar Company and all you need to do
+
+to add it into any website is to come
+
+down to the bottom and add it as a
+
+script tag so here I'll delete the old
+
+one at the bottom of most websites you
+
+should see a stack of these script tags
+
+all you need to do is sort of jump in
+
+between a couple of them just to be safe
+
+and then paste in that script tag there
+
+and we can save that I can run the
+
+website if I refresh it there you can
+
+see I have the web page and at the
+
+bottom right I have our chat bot and
+
+then we have it hi I'm Lucy Smith solar
+
+resistant I can help you with that we
+
+can test it again what are my financing
+
+options and then we have it we've got
+
+cash purchases loans and financing solar
+
+leases and power purchase agreements
+
+great we can go um my address is and
+
+then we can pull in this guys up here
+
+5333 Schult street is and I pay $400 per
+
+month as expected it's giving us back
+
+the information we requested Federal
+
+incentive cost without solar um some of
+
+the leasing cash purchase and finance
+
+options Etc it's asking for my name and
+
+phone number so I can go um Bruce
+
+Willis and my phone error is
+
+301
+
+pop back over to air Table and there we
+
+go Bruce Willis with his address and his
+
+phone number has all been logged
+
+correctly into our air table CRM and
+
+there's one final thing that I want to
+
+mention about this kind of build which
+
+is by running it on repet like this and
+
+just running it within the editor you're
+
+only running a very basic and and
+
+limited server and and infrastructure to
+
+manage this application so what you can
+
+do within repet they actually have a
+
+deployment option so that you can go
+
+down on the bottom left here and click
+
+on deployments and it's going to be
+
+deployment options on the side side now
+
+you can pick whichever one you like to
+
+do you can follow through the setup so
+
+set up your deployment you can pick how
+
+much money you want to spend let's say
+
+we just go one machine uh we can go
+
+through essentially you can go through
+
+the steps here and fill this out and
+
+click on this deploy button then it's
+
+going to actually deploy your
+
+application to the servers that can run
+
+constantly that are going to allow you
+
+to call this whenever so when you're
+
+taking a two production grade there is
+
+another step required but in this video
+
+I want you guys to just be able to spin
+
+it up as quickly as possible if you want
+
+me to go in depth on deployments and how
+
+you can manage a production great
+
+application rather than just a demo or a
+
+prototype like this then let me know in
+
+the comments below and I can definitely
+
+get that out to you that's it for the
+
+build I hope you've been able to follow
+
+along I hope you see how insanely
+
+powerful these things are as a lead
+
+generation tool in this case also
+
+helping customers learn more about the
+
+business learn more about the products
+
+they selling and being able to flexibly
+
+use these different functions and pull
+
+in information from the chat is just so
+
+much better than the kind of stuff we've
+
+had to work with before prior to this
+
+assistance release getting some of this
+
+functionality was close to Impossible
+
+now we can do it in a couple of hours if
+
+you do enjoy these kinds of videos and
+
+want an a toz course on how you can
+
+create these kind of chatbots and
+
+assistance for your business or to sell
+
+to other businesses be sure to subscribe
+
+to the channel because I have a new
+
+video coming breaking down things step
+
+by step I know I went kind of fast on
+
+some parts of this but really the entire
+
+process for creating these functions
+
+step by step and I'm going to be using a
+
+ton of examples in this video so if you
+
+want to be in the loop and not miss that
+
+video be sure to subscribe to the
+
+Channel Down Below or if you can't wait
+
+for that you can join my AI business
+
+accelerator where we have some of the
+
+sharpest AI entrepreneurs in the space
+
+right now all moving on this opportunity
+
+and we're all sharing knowledge together
+
+sharing learnings plus I'm in there
+
+doing full workshops on this kind of
+
+stuff multiple times a week so if you
+
+want to get in there there'll be a link
+
+in the description for you to join the
+
+community of course as mentioned all
+
+templates and resources from this video
+
+are available in the description by my
+
+free resource Hub so you can head down
+
+there and check those out the reflet
+
+template The Voice flow template the air
+
+table template and the knowledge based
+
+document are all going to be there for
+
+you guys to take and copy this exact
+
+build in just a few minutes I also have
+
+my free telegram where I'm dropping
+
+daily information and learnings on the
+
+gpts topic so if you're not already in
+
+the telegram you can join that in the
+
+description as well if you want to learn
+
+more about how you can make money by
+
+selling these kind of GPT solutions to
+
+businesses you can check out my video
+
+here where I break down the best ways to
+
+make money with gpts but aside from that
+
+that's all for the video guys thank you
+
+so much for watching and I will see you
+
+in the next one
+
